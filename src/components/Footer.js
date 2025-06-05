@@ -7,14 +7,14 @@ const Footer = () => {
       <div className="footer-top">India</div>
       <div className="footer-bottom">
         <div className="footer-left">
-          <a href="#">Advertising</a>
-          <a href="#">Business</a>
-          <a href="#">How Search works</a>
+          <a href="https://www.google.com/">Advertising</a>
+          <a href="https://www.google.com/">Business</a>
+          <a href="https://www.google.com/">How Search works</a>
         </div>
         <div className="footer-right">
-          <a href="#">Privacy</a>
-          <a href="#">Terms</a>
-          <a href="#">Settings</a>
+          <a href="https://www.google.com/">Privacy</a>
+          <a href="https://www.google.com/">Terms</a>
+          <a href="https://www.google.com/">Settings</a>
         </div>
       </div>
     </div>
