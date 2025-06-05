@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px;
+    font-size: 14px;
+    color: #5f6368;
+}
+
+.header-left a{
+    margin-right: 16px;
+    text-decoration: none;
+    color: #000;
+}
+.header-right a{
+    text-decoration: none;
+    color: #000;
+}
+.header-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.material-symbols-outlined {
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+#profile-circle {
+    width: 32px;
+    height: 32px;
+    background-color: #673ab7;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; }
+

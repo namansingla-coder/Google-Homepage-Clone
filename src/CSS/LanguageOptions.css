@@ -1,0 +1,29 @@
+.languages {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #202124;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.lang-links {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 6px;
+    color: #1a0dab;
+}
+
+.lang {
+    cursor: pointer;
+    color: #1a0dab;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.lang:hover {
+    text-decoration: underline; }
