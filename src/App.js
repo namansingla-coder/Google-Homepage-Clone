@@ -1,10 +1,11 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./CSS/App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import SearchBox from "./components/SearchBox";
 import Buttons from "./components/Buttons";
 import LanguageOptions from "./components/LanguageOptions";
+import AppsMenu from "./components/AppMenu"; // new component
 import logo from "./assests/logo.png";
 
 const languageTranslations = {
@@ -22,18 +23,24 @@ const languageTranslations = {
 
 function App() {
   const [selectedLanguage, setSelectedLanguage] = useState("English");
+  const [showApps, setShowApps] = useState(false); // toggle state
 
   const handleLanguageChange = (lang) => {
     setSelectedLanguage(lang);
   };
 
+  const toggleApps = () => {
+    setShowApps(prev => !prev);
+  };
+
   return (
     <div className="app">
-      <Header />
+      <Header onAppsClick={toggleApps} />
+      {showApps && <AppsMenu />} {/* conditionally render apps menu */}
       <main className="main-content">
         <img src={logo} alt="Google Logo" className="logo" />
         <SearchBox />
-        <Buttons feelingLucky={languageTranslations[selectedLanguage]}/>
+        <Buttons feelingLucky={languageTranslations[selectedLanguage]} />
         <LanguageOptions
           selectedLanguage={selectedLanguage}
           onLanguageChange={handleLanguageChange}

@@ -7,13 +7,13 @@ const Footer = () => {
       <div className="footer-top">India</div>
       <div className="footer-bottom">
         <div className="footer-left">
-          <a href="https://www.google.com/">Advertising</a>
-          <a href="https://www.google.com/">Business</a>
-          <a href="https://www.google.com/">How Search works</a>
+          <a href="https://business.google.com/">Advertising</a>
+          <a href="https://business.google.com/">Business</a>
+          <a href="https://www.google.com/search/howsearchworks/?fg=1">How Search works</a>
         </div>
         <div className="footer-right">
-          <a href="https://www.google.com/">Privacy</a>
-          <a href="https://www.google.com/">Terms</a>
+          <a href="https://policies.google.com/privacy?hl=en-IN&fg=1">Privacy</a>
+          <a href="https://policies.google.com/terms?hl=en-IN&fg=1">Terms</a>
           <a href="https://www.google.com/">Settings</a>
         </div>
       </div>

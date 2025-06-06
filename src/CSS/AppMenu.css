@@ -1,0 +1,44 @@
+.apps-popup {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1000;
+    width: 320px;
+}
+
+.app-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.app-item {
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    transition: background-color 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: black
+
+}
+.app-item > .app-icon {
+    font-size: 40px;
+}
+#youtube {
+    color: red;
+}
+.app-item:hover {
+    background-color: #e8eaed;
+}
+
+.app-item svg {
+    font-size: 20px;
+    margin-bottom: 5px; }
