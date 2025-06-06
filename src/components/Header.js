@@ -16,7 +16,7 @@ const Header = ({ onAppsClick }) => {
         <a href="https://www.google.com/imghp?hl=en&authuser=0&ogbl">Images</a>
         <span className="icon"><ImLab /></span>
         <span className="icon" onClick={onAppsClick}><IoApps /></span>
-        <a href="#" id="profile-circle">N</a>
+        <a href="https://myaccount.google.com" id="profile-circle">N</a>
       </div>
     </div>
   );
