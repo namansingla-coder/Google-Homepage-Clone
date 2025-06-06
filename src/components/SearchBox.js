@@ -24,7 +24,9 @@ const SearchBox = () => {
   const handleKeyDown = (e) => {
     if (e.key === "Enter" && query.trim() !== "") {
       const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
-      window.open(searchUrl, "_blank"); // opens in new tab
+
+      // window.open(searchUrl, "_blank");  opens in same tab
+      window.location.href = searchUrl; // opens in same tab
     }
   };
 
