@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    width: 100%;
 }
 
 .main-content {
@@ -10,7 +11,27 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0 20px;
 }
 
 .logo {
-    width: 350px; }
+    width: 350px;
+    max-width: 90%;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 0 15px;
+    }
+    
+    .logo {
+        width: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 220px;
+    }
+}

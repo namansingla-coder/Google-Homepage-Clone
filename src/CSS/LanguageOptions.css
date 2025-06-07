@@ -8,6 +8,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 6px;
+    padding: 0 15px;
 }
 
 .lang-links {
@@ -16,6 +17,7 @@
     gap: 10px;
     margin-left: 6px;
     color: #1a0dab;
+    justify-content: center;
 }
 
 .lang {
@@ -26,4 +28,33 @@
 }
 
 .lang:hover {
-    text-decoration: underline; }
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .languages {
+        margin-top: 16px;
+        font-size: 13px;
+        gap: 5px;
+    }
+    
+    .lang-links {
+        gap: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .languages {
+        margin-top: 14px;
+        font-size: 12px;
+        gap: 4px;
+        flex-direction: column;
+    }
+    
+    .lang-links {
+        gap: 6px;
+        margin-top: 5px;
+        margin-left: 0;
+    }
+}

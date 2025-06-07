@@ -8,6 +8,7 @@
     padding: 20px;
     z-index: 1000;
     width: 320px;
+    max-width: 90vw;
 }
 
 .app-grid {
@@ -26,19 +27,72 @@
     align-items: center;
     cursor: pointer;
     text-decoration: none;
-    color: black
-
+    color: black;
 }
+
 .app-item > .app-icon {
     font-size: 40px;
 }
+
 #youtube {
     color: red;
 }
+
 .app-item:hover {
     background-color: #e8eaed;
 }
 
 .app-item svg {
     font-size: 20px;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .apps-popup {
+        top: 50px;
+        right: 15px;
+        padding: 15px;
+        width: 280px;
+    }
+    
+    .app-grid {
+        gap: 10px;
+    }
+    
+    .app-item {
+        font-size: 13px;
+        padding: 8px;
+    }
+    
+    .app-item > .app-icon {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .apps-popup {
+        top: 45px;
+        right: 10px;
+        padding: 12px;
+        width: 240px;
+    }
+    
+    .app-grid {
+        gap: 8px;
+    }
+    
+    .app-item {
+        font-size: 12px;
+        padding: 6px;
+    }
+    
+    .app-item > .app-icon {
+        font-size: 28px;
+    }
+    
+    .app-item svg {
+        font-size: 18px;
+        margin-bottom: 4px;
+    }
+}

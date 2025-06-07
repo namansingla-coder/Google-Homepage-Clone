@@ -1,6 +1,7 @@
 .footer {
     font-size: 14px;
     background-color: #f2f2f2;
+    width: 100%;
 }
 
 .footer-top {
@@ -13,10 +14,64 @@
     justify-content: space-between;
     padding: 12px 24px;
     flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer-left,
+.footer-right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .footer-left a,
 .footer-right a {
     margin-right: 20px;
     color: black;
-    text-decoration: none; }
+    text-decoration: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .footer {
+        font-size: 13px;
+    }
+    
+    .footer-top,
+    .footer-bottom {
+        padding: 10px 16px;
+    }
+    
+    .footer-left a,
+    .footer-right a {
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-left,
+    .footer-right {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        font-size: 12px;
+    }
+    
+    .footer-top,
+    .footer-bottom {
+        padding: 8px 12px;
+    }
+    
+    .footer-left a,
+    .footer-right a {
+        margin-right: 10px;
+    }
+}
